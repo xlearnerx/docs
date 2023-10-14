@@ -53,13 +53,13 @@ In the following command, option `--mount` is for starting the container with a 
    {{< tab name="Windows" >}}
 
    ```powershell
-   $ docker run --rm -d `
-     --mount type=volume,src=db-data,target=/var/lib/postgresql/data `
-     -p 5432:5432 `
-     --network postgresnet `
-     --name db `
-     -e POSTGRES_PASSWORD=mysecretpassword `
-     -e POSTGRES_DB=example `
+   $ docker run --rm -d ^
+     --mount type=volume,src=db-data,target=/var/lib/postgresql/data ^
+     -p 5432:5432 ^
+     --network postgresnet ^
+     --name db ^
+     -e POSTGRES_PASSWORD=mysecretpassword ^
+     -e POSTGRES_DB=example ^
      postgres
    ```
 
